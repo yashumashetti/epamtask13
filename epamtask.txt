@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            background-color: rgb(20,25,46);
+        }
+        .hsty
+        {
+            font-family: 'Rowdies', cursive;
+            color:darkgrey;
+            text-align: center;
+            text-shadow: 0px 0px 10px 2px black;
+        }
+        .divbgsty
+        {
+            background-color:whitesmoke;
+            border:2px solid black;
+            border-radius:5px;
+            margin:auto;
+            margin-top:40px;
+            width:550px;
+            height:580px;
+            box-shadow: 0px 0px 20px 2px whitesmoke;
+        }
+        .divstyform
+        {
+            width:400px;
+            line-height:2px;
+            padding:10px;
+            margin-left:90px;
+            border:1px thin black;
+            border-radius:30px;
+        }
+        .martop
+        {
+            margin-top: 20px;
+        }
+        .button
+        {
+            margin-top:20px;
+            margin-left:120px;
+            color:whitesmoke;
+            width:300px;
+            height:40px;
+            background-color: green;
+            font-size: large;
+            border:none;
+            cursor:pointer;
+        }
+        div input
+        {
+            width:350px;
+            height:40px;
+            background-color: darkgrey;
+            color:black;
+            border:none;
+            font-size: medium;
+        }
+
+        p{
+            text-align: center;
+            color:whitesmoke;
+            font-size: larger;
+            line-height:20px;
+        }
+        p a 
+        {
+            color:lightblue;
+        }
+        ::placeholder
+        {
+            color:black;
+            text-align:left;
+            font-size:medium;
+            padding:4px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="hsty">Registration Page</h1>
+        <div class="divbgsty">
+            <form onsubmit="return validatereg()" action="RegSuccess.html">
+                <div class="divstyform martop"> 
+                    <label for="fname">
+                        <input type="text" name="fname" id="fname" placeholder="First Name">
+                    </label>
+                    <label id="lfname" style="visibility:hidden;"> 
+                        Please Enter Valid First Name
+                    </label>
+                </div>
+                <div class="divstyform">
+                    <label for="lname">
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
+                    </label>
+                    <label id="llname" style="visibility:hidden;">
+                        Please Enter Valid Last Name
+                    </label>
+                </div>
+                <div class="divstyform">
+                    <label for="email">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </label>
+                    <label id="lemail" style="visibility:hidden;">
+                        Please Enter Valid E-mail id
+                    </label>
+                </div>
+                <div class="divstyform">
+                    <label for="phnnum">
+                        <input type="phonenumber" name="phnnum" id="phnnum" placeholder="+91 " maxlength="10">
+                    </label>
+                    <label id="lphn" style="visibility:hidden;">
+                        Please Enter Valid 10-digit phonenumber
+                    </label>
+                </div>
+                <div class="divstyform" >
+                    <label for="date">
+                        <input type="date" name="date" id="date">
+                    </label>
+                    <label id="ldate" style="visibility:hidden;">
+                        Please Enter Valid Date
+                    </label>
+                </div>
+                <div class="divstyform">
+                    <label for="pass">
+                        <input type="password" name="pass" id="pass" placeholder="Password">
+                    </label>
+                    <label id="lpass" style="visibility:hidden;">
+                        Please Enter Valid Password
+                    </label>
+                </div>
+                <div class="divstyform">
+                    <label for="cpass">
+                        <input type="password" name="cpass" id="cpass" placeholder="Confirm Password">
+                    </label>
+                    <label id="lcpass" style="visibility:hidden;">
+                        Please Confirm Password
+                    </label>
+                </div>
+                <label for="sub">
+                     <input type="submit" name="submit" id="sub" value="Register" class="button">
+                </label>
+            </form>
+        </div>
+        <p>
+            Aldready have an account? 
+            <span>
+                <a href="Loginpage.html">Login in</a>
+            </span>
+        </p>
+    </main>
+</body>
+</html>
+
+
+
+<script  src="regj.js" type="text/javascript">
+
+</script>

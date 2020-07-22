@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Success</title>
+    <style>
+        .sty
+        {
+            text-align: center;
+            color: green;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="sty">
+        <p>Login Successfull</p>
+    </div>
+</body>
+</html>
+
